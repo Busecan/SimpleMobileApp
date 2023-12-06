@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string-array name="taban">
+        <item>ikilik</item>
+        <item>sekizlik</item>
+        <item>onaltılık</item>
+    </string-array>
+
+    <string-array name="donusum">
+        <item>bit</item>
+        <item>byte</item>
+        <item>kibibyte</item>
+        <item>kilobayt</item>
+    </string-array>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".randomActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/randomTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Random Generator"
+                android:textSize="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/adetEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Oluşturulacak progress bar adetini giriniz."
+                android:inputType="number"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/minEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Minimum değer giriniz."
+                android:ems="10"
+                android:layout_marginTop="16dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/maxEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Maksimum değer giriniz."
+                android:ems="10"
+                android:layout_marginTop="16dp"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/generateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oluştur"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

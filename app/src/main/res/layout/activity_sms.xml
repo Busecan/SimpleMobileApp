@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".smsActivity">
+
+    <TextView
+        android:id="@+id/smstextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/smstextView"
+        android:layout_marginTop="16dp"
+        android:hint="Telefon numarasını giriniz."
+        android:inputType="number|phone"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhoneNumber"
+        android:layout_marginTop="16dp"
+        android:hint="Mesajınızı giriniz."
+        android:inputType="textMultiLine"
+        android:lines="5"/>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMessage"
+        android:layout_marginTop="16dp"
+        android:text="Gönder"/>
+
+
+</RelativeLayout>
